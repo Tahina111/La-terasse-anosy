@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Terrasse Anosy | Restaurant à Fianarantsoa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">La Terrasse <span class="highlight">Anosy</span></div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">Le Lieu</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#reservation" class="btn-reserver">Réserver</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Saveurs d'ici et d'ailleurs</h1>
+            <p>Une expérience culinaire unique au bord du Lac Anosy.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-outline">Voir le Menu</a>
+                <a href="#reservation" class="btn btn-fill">Réserver une table</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos" class="section">
+        <div class="container split">
+            <div class="text-block">
+                <h2>L'Esprit de la Terrasse</h2>
+                <p>Nichée au cœur de Fianarantsoa, <strong>La Terrasse Anosy</strong> vous offre une évasion paisible loin de l'agitation urbaine. Notre établissement allie la chaleur de l'accueil malgache à une ambiance décontractée.</p>
+                <p>Que ce soit pour un déjeuner d'affaires, un dîner romantique ou un moment en famille, profitez de notre vue imprenable sur le lac tout en dégustant nos spécialités.</p>
+            </div>
+            <div class="image-block">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vue terrasse">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Notre Carte</h2>
+            <p class="subtitle text-center">Une fusion entre tradition malgache et finesses asiatiques</p>
+            
+            <div class="menu-grid">
+                <div class="menu-col">
+                    <h3><i class="fas fa-utensils"></i> Plats Signature</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <span class="plat">Canard à la Vanille de Madagascar</span>
+                            <span class="prix">25 000 Ar</span>
+                            <p class="desc">Magret tendre, sauce onctueuse et légumes sautés.</p>
+                        </li>
+                        <li>
+                            <span class="plat">Wok de Crevettes & Légumes croquants</span>
+                            <span class="prix">22 000 Ar</span>
+                            <p class="desc">Saveurs asiatiques, gingembre et sauce soja.</p>
+                        </li>
+                        <li>
+                            <span class="plat">Romazava Royal</span>
+                            <span class="prix">18 000 Ar</span>
+                            <p class="desc">Le grand classique avec bœuf et brèdes mafana.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="menu-col">
+                    <h3><i class="fas fa-cocktail"></i> Bar & Rhums</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <span class="plat">Rhum Arrangé Maison (Verre)</span>
+                            <span class="prix">5 000 Ar</span>
+                            <p class="desc">Litchi, Cannelle, Gingembre ou Baie rose.</p>
+                        </li>
+                        <li>
+                            <span class="plat">Cocktail "Coucher de Soleil"</span>
+                            <span class="prix">12 000 Ar</span>
+                            <p class="desc">Jus frais, grenadine et rhum blanc.</p>
+                        </li>
+                        <li>
+                            <span class="plat">Bière THB (65cl)</span>
+                            <span class="prix">6 000 Ar</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="section">
+        <div class="container">
+            <h2 class="text-center">En Images</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=600&q=80" alt="Plat">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" alt="Cocktail">
+                <img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?auto=format&fit=crop&w=600&q=80" alt="Terrasse">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Ambiance">
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="section bg-dark">
+        <div class="container form-container">
+            <h2>Réserver votre table</h2>
+            <p>Assurez-vous d'avoir la meilleure vue sur le lac.</p>
+            <form id="bookingForm">
+                <div class="input-group">
+                    <input type="text" placeholder="Votre Nom" required>
+                    <input type="tel" placeholder="Téléphone" required>
+                </div>
+                <div class="input-group">
+                    <input type="date" required>
+                    <input type="time" min="10:00" max="21:00" required>
+                </div>
+                <input type="number" placeholder="Nombre de personnes" min="1" required>
+                <button type="submit" class="btn btn-primary">Confirmer la demande</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h4>La Terrasse Anosy</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Bord du Lac Anosy, Fianarantsoa</p>
+                <p><i class="fas fa-phone"></i> +261 34 00 000 00</p>
+                <p><i class="fas fa-clock"></i> 10h00 - 22h00 (7j/7)</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0!2d47.08!3d-21.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzAwLjAiUyA0N8KwMDQnNDguMCJF!5e0!3m2!1sfr!2smg!4v1600000000000!5m2!1sfr!2smg" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 La Terrasse Anosy - Fianarantsoa.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
